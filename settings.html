@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiet Send Settings</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="settings">
+  <div class="settings-container">
+    <div class="header">
+      <h1>Quiet Send Settings</h1>
+      <p class="subtitle">Manage your contacts and preferences</p>
+    </div>
+
+    <div class="section">
+      <h2>Add New Contact</h2>
+      <div class="add-contact-form">
+        <div class="form-row">
+          <input 
+            type="text" 
+            id="contactName" 
+            placeholder="Their name" 
+            class="form-input"
+          >
+          <input 
+            type="email" 
+            id="contactEmail" 
+            placeholder="their@email.com" 
+            class="form-input"
+          >
+        </div>
+        <button id="addContactButton" class="add-button">Add Contact</button>
+        <div class="contact-limit">You can add up to 5 people</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Your Contacts</h2>
+      <div id="contactsList" class="contacts-management">
+        <!-- Contacts will be populated here -->
+      </div>
+      <div id="noContactsMessage" class="no-contacts" style="display: none;">
+        <p>No contacts added yet. Add someone above to get started!</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Preferences</h2>
+      <label class="checkbox-container">
+        <input type="checkbox" id="alwaysSendCopy">
+        <span class="checkmark"></span>
+        Always send a copy to myself
+      </label>
+    </div>
+
+    <div id="message" class="message" style="display: none;"></div>
+  </div>
+
+  <script src="settings.js"></script>
+</body>
+</html>

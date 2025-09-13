@@ -2,13 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Extension Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiet Send</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <h1>Dyad Chrome Extension</h1>
-  <button id="pingBtn">Ping Background</button>
-  <p id="response"></p>
+<body class="popup">
+  <div class="popup-container">
+    <div class="header">
+      <h1>Quiet Send</h1>
+      <div id="pageTitle" class="page-title">Loading...</div>
+    </div>
+
+    <div class="content">
+      <div class="section">
+        <label class="section-label">Send to:</label>
+        <div id="contactsList" class="contacts-list">
+          <!-- Contacts will be populated here -->
+        </div>
+        <div id="noContacts" class="no-contacts" style="display: none;">
+          <p>You haven't added anyone yet.</p>
+          <button id="openSettings" class="link-button">Go to settings to add up to 5 people</button>
+        </div>
+      </div>
+
+      <div class="section">
+        <label for="noteInput" class="section-label">Optional note:</label>
+        <textarea 
+          id="noteInput" 
+          class="note-input" 
+          placeholder="Why this made me think of them…"
+          rows="3"
+        ></textarea>
+      </div>
+
+      <div class="section">
+        <label class="checkbox-container">
+          <input type="checkbox" id="sendCopyToSelf">
+          <span class="checkmark"></span>
+          Send a copy to myself (optional)
+        </label>
+      </div>
+
+      <div class="actions">
+        <button id="saveButton" class="save-button" disabled>
+          Save for Sunday Digest
+        </button>
+      </div>
+
+      <div id="message" class="message" style="display: none;"></div>
+    </div>
+  </div>
 
   <script src="popup.js"></script>
 </body>

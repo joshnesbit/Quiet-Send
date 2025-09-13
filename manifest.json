@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Dyad Chrome Extension Template",
+  "name": "Quiet Send",
   "version": "1.0.0",
-  "description": "Minimal Chrome extension template for Dyad AI",
+  "description": "Save links while browsing and send them as weekly email digests to people you care about",
   "permissions": ["storage", "scripting", "activeTab"],
   "background": {
     "service_worker": "background.js"
@@ -20,5 +20,6 @@
       "48": "icon48.png",
       "128": "icon128.png"
     }
-  }
+  },
+  "options_page": "settings.html"
 }

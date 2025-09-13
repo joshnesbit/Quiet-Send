@@ -1,8 +1,16 @@
 # Version History
 
-## v1.0.0 – 2025-08-24
-- @ToneDice created manifest.json with basic permissions and action popup
-- Added background.js with minimal event listener
-- Added content.js placeholder
-- Added popup.html and popup.js with simple ping functionality
-- Added styles.css for minimal popup styling
+## v1.0.0 – 2025-01-27
+- Complete rewrite as "Quiet Send" - a thoughtful link sharing extension
+- Added popup.html with link saving interface and contact selection
+- Added settings.html for contact management and preferences
+- Created warm, minimal UI design with soft colors and rounded elements
+- Implemented contact management (add, delete, resend confirmation)
+- Added note input for personal messages with saved links
+- Implemented "send copy to myself" option
+- Added backend abstraction functions for future integration
+- Updated manifest.json with options_page for settings
+- Added proper form validation and error handling
+- Designed for weekly digest email system (backend integration pending)
+- Maximum 5 contacts limit with confirmation flow
+- Local storage implementation as placeholder for backend

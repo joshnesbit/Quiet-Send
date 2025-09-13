@@ -1,7 +1,9 @@
 // content.js
-// This script runs in the context of web pages
+// Content script for Quiet Send
+// This could be used for future features like highlighting saved links or quick-save buttons
 
-console.log("Content script loaded");
+console.log("Quiet Send content script loaded");
 
-// Example: change background color of page
-document.body.style.border = "5px solid #ff0000";
+// Future: Could add visual indicators for previously saved links
+// Future: Could add quick-save floating button
+// Future: Could integrate with specific websites for better link extraction
