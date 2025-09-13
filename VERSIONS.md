@@ -1,5 +1,8 @@
 # Version History
 
+## v1.0.1 – 2025-09-12
+- Added "alarms" permission to manifest.json to enable chrome.alarms API usage in background script.
+
 ## v1.0.0 – 2025-01-27
 - Complete rewrite as "Quiet Send" - a thoughtful link sharing extension
 - Added popup.html with link saving interface and contact selection
