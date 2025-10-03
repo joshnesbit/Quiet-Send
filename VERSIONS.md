@@ -1,5 +1,8 @@
 # Version History
 
+## v1.0.2 – 2025-01-27
+- Updated LICENSE to MIT License for open source distribution
+
 ## v1.0.1 – 2025-09-12
 - Added "alarms" permission to manifest.json to enable chrome.alarms API usage in background script.
 
