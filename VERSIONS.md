@@ -1,5 +1,8 @@
 # Version History
 
+## v1.0.3 – 2025-01-27
+- Added README.md with warm introduction and project overview
+
 ## v1.0.2 – 2025-01-27
 - Updated LICENSE to MIT License for open source distribution
 
